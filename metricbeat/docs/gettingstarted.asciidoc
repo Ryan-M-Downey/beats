@@ -131,6 +131,14 @@ https://www.elastic.co/downloads/beats/{beatname_lc}[downloads page].
 
 . Rename the +{beatname_lc}-<version>-windows+` directory to +{beatname_uc}+.
 
+NOTE: Changing the folder to name to Metricbeat on a Windows system may
+create the error message "Error 193: 0xc1 Service fails to start" when the
+program is executed.  This is a known Microsoft error and it may be better to
+rename the folder to Metricbeat-<version>. I found that running metricbeat.exe
+crashed when run out of the Metricbeat folder but did not crash when run out
+of a folder named metricbeat-6.5.4 in our system.
+https://support.gfi.com/hc/en-us/articles/360012862694-Error-193-0xc1-Service-fails-to-start
+
 . Open a PowerShell prompt as an Administrator (right-click the PowerShell icon
 and select *Run As Administrator*).
 
